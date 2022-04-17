@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WildMan Vending Machine</title>
+  </head>
+    <body>
+      <h1>WildMan Vending Machine</h1>
+        <p>Balance: $<span id="balanceNumber">0</span></p>
+        <p>Coin and Bill Count: </br><span id="coinandBillDisplay">Make a coin or bill selection...</span></p>
+        <!--coin images 50*50px, bill images 100*50px -->
+        <h2>Coin and Bill Selection:</h2>
+        <div class="coinAndBillSelection-1">
+        <div class="vote">
+          <div class="up-arrow">
+            <div class="triangle" id="pennyUpArrow">
+            </div>
+            <div class="rectangle" id="pennyUpArrow">
+            </div>
+          </div>
+          <p id="votes"><span id="voteNumber"></span> <img class="coinsAndBills" src="images/penny.jpg" alt="penny"></p>
+          <div class="down-arrow">
+            <div class="down-triangle" id="pennyDownArrow">
+            </div>
+            <div class="down-rectangle" id="pennyDownArrow">
+            </div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="up-arrow">
+            <div class="triangle" id="nickelUpArrow">
+            </div>
+            <div class="rectangle" id="nickelUpArrow">
+            </div>
+          </div>
+          <p id="votes"><span id="voteNumber"></span> <img class="coinsAndBills" src="images/nickel.jpg" alt="nickel"></p>
+          <div class="down-arrow">
+            <div class="down-triangle" id="nickelDownArrow">
+            </div>
+            <div class="down-rectangle" id="nickelDownArrow">
+            </div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="up-arrow">
+            <div class="triangle" id="dimeUpArrow">
+            </div>
+            <div class="rectangle" id="dimeUpArrow">
+            </div>
+          </div>
+          <p id="votes"><span id="voteNumber"></span> <img class="coinsAndBills" src="images/dime.jpg" alt="dime"></p>
+          <div class="down-arrow">
+            <div class="down-triangle" id="dimeDownArrow">
+            </div>
+            <div class="down-rectangle" id="dimeDownArrow">
+            </div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="up-arrow">
+            <div class="triangle" id="quarterUpArrow">
+            </div>
+            <div class="rectangle" id="quarterUpArrow">
+            </div>
+          </div>
+          <p id="votes"><span id="voteNumber"></span> <img class="coinsAndBills" src="images/quarter.jpg" alt="quarter"></p>
+          <div class="down-arrow">
+            <div class="down-triangle" id="quarterDownArrow">
+            </div>
+            <div class="down-rectangle" id="quarterDownArrow">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="coinAndBillSelection-2">
+        <div class="vote">
+          <div class="up-arrow">
+            <div class="triangle" id="oneDollarUpArrow">
+            </div>
+            <div class="rectangle" id="oneDollarUpArrow">
+            </div>
+          </div>
+          <p id="votes"><span id="voteNumber"></span> <img class="coinsAndBills" src="images/oneDollar.jpg" alt="quarter"></p>
+          <div class="down-arrow">
+            <div class="down-triangle" id="oneDollarDownArrow">
+            </div>
+            <div class="down-rectangle" id="oneDollarDownArrow">
+            </div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="up-arrow">
+            <div class="triangle" id="fiveDollarUpArrow">
+            </div>
+            <div class="rectangle" id="fiveDollarUpArrow">
+            </div>
+          </div>
+          <p id="votes"><span id="voteNumber"></span> <img class="coinsAndBills" src="images/fiveDollar.jpg" alt="quarter"></p>
+          <div class="down-arrow">
+            <div class="down-triangle" id="fiveDollarDownArrow">
+            </div>
+            <div class="down-rectangle" id="fiveDollarDownArrow">
+            </div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="up-arrow">
+            <div class="triangle" id="tenDollarUpArrow">
+            </div>
+            <div class="rectangle" id="tenDollarUpArrow">
+            </div>
+          </div>
+          <p id="votes"><span id="voteNumber"></span> <img class="coinsAndBills" src="images/tenDollar.jpg" alt="quarter"></p>
+          <div class="down-arrow">
+            <div class="down-triangle" id="tenDollarDownArrow">
+            </div>
+            <div class="down-rectangle" id="tenDollarDownArrow">
+            </div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="up-arrow">
+            <div class="triangle" id="twentyDollarUpArrow">
+            </div>
+            <div class="rectangle" id="twentyDollarUpArrow">
+            </div>
+          </div>
+          <p id="votes"><span id="voteNumber"></span> <img class="coinsAndBills" src="images/twentyDollar.jpg" alt="quarter"></p>
+          <div class="down-arrow">
+            <div class="down-triangle" id="twentyDollarDownArrow">
+            </div>
+            <div class="down-rectangle" id="twentyDollarDownArrow">
+            </div>
+          </div>
+        </div>
+        <div class="vote">
+          <div class="up-arrow">
+            <div class="triangle" id="hundredDollarUpArrow">
+            </div>
+            <div class="rectangle" id="hundredDollarUpArrow">
+            </div>
+          </div>
+          <p id="votes"><span id="voteNumber"></span> <img class="coinsAndBills" src="images/hundredDollar.jpg" alt="quarter"></p>
+          <div class="down-arrow">
+            <div class="down-triangle" id="hundredDollarDownArrow">
+            </div>
+            <div class="down-rectangle" id="hundredDollarDownArrow">
+            </div>
+          </div>
+        </div>
+      </div>
+        <h2>Drink Selection:</h2>
+        <button class="btn" id="coke">Coke</button>
+        <button class="btn" id="pepsi">Pepsi</button>
+        <button class="btn" id="water">Water</button>
+        <button class="btn" id="nuka">Nuka-Cola</button>
+        <button class="btn" id="kombucha">Kombucha</button>
+        <button class="btn" id="tab">Tab</button>
+        <p id="selection">Make a drink selection...</p>
+        <!--Drink images 250*250px -->
+        <img id="selection_img" src="">
+        <button id="buyButton">Buy <span id="buyName"></span></button>
+    </body>
+    <script src="script.js"></script>
+</body>
+</html>
