@@ -33,7 +33,7 @@ const coinsAndBills = {
     coinsandBillDisplay.innerHTML =
       "Pennies: " +
       coinsAndBills.Pennies +
-      "</br>Nickels: " +
+      ", Nickels: " +
       coinsAndBills.Nickels +
       "</br>Dimes: " +
       coinsAndBills.Dimes +
