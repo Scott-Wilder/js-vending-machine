@@ -35,19 +35,19 @@ const coinsAndBills = {
       coinsAndBills.Pennies +
       ", Nickels: " +
       coinsAndBills.Nickels +
-      "</br>Dimes: " +
+      ", Dimes: " +
       coinsAndBills.Dimes +
-      "</br>Quarters: " +
+      ", Quarters: " +
       coinsAndBills.Quarters +
-      "</br>Ones: " +
+      "</br> Ones: " +
       coinsAndBills.Ones +
-      "</br>fives: " +
+      ", Fives: " +
       coinsAndBills.Fives +
-      "</br>Tens: " +
+      ", Tens: " +
       coinsAndBills.Tens +
-      "</br>Twenties: " +
+      ", Twenties: " +
       coinsAndBills.Twenties +
-      "</br>Hundreds: " +
+      ", Hundreds: " +
       coinsAndBills.Hundreds;
   },
 };
