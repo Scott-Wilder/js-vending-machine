@@ -78,7 +78,7 @@ select {
 
 .coinAndBillSelection-1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -176,6 +176,7 @@ h3 {
   border-width: 1px;
   box-shadow: 32px 0px 5px 0px black;
   border-radius: 5px;
+  margin-bottom: 5rem;
 }
 h2 {
   text-align: center;
