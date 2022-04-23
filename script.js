@@ -244,12 +244,12 @@ class Drink {
   }
 }
 // Create drink objects name, price, calorie, image src.
-var coke = new Drink("Coke", 2.5, 250, "images/coke.jpg");
-var pepsi = new Drink("Pepsi", 2.5, 275, "images/pepsi.jpg");
-var water = new Drink("Water", 2, 0, "images/water.jpg");
+var coke = new Drink("Coke", 2.5, 250, "images/coke.png");
+var pepsi = new Drink("Pepsi", 2.5, 275, "images/pepsi.png");
+var water = new Drink("Water", 2, 0, "images/water.png");
 var nuka = new Drink("Nuka-Cola", 4.75, 500, "images/nuka.png");
-var kombucha = new Drink("Kombucha", 3.5, 420, "images/kombucha.jpg");
-var tab = new Drink("Tab", 1, 380, "images/tab.jpg");
+var kombucha = new Drink("Kombucha", 3.5, 420, "images/kombucha-2.png");
+var tab = new Drink("Tab", 1, 380, "images/tab.png");
 // Determines which button was pressed and displays corresponding drink object with buy button.
 function select(e) {
   if (e.target.textContent == "Coke") {
