@@ -1,6 +1,6 @@
 const btns = document.getElementsByClassName("btn");
 const selection = document.getElementById("selection");
-const selection_img = document.getElementById("selection_img");
+const selectionImg = document.getElementById("selectionImg");
 const buyButton = document.getElementById("buyButton");
 const buyName = document.getElementById("buyName");
 const balanceNumber = document.getElementById("balanceNumber");
@@ -254,37 +254,37 @@ var tab = new Drink("Tab", 1, 380, "images/tab.png");
 function select(e) {
   if (e.target.textContent == "Coke") {
     selection.innerHTML = coke.printDescription();
-    selection_img.src = coke.image;
+    selectionImg.src = coke.image;
     buyButton.style.display = "block";
     buyName.innerHTML = coke.name;
   }
   if (e.target.textContent == "Pepsi") {
     selection.innerHTML = pepsi.printDescription();
-    selection_img.src = pepsi.image;
+    selectionImg.src = pepsi.image;
     buyButton.style.display = "block";
     buyName.innerHTML = pepsi.name;
   }
   if (e.target.textContent == "Water") {
     selection.innerHTML = water.printDescription();
-    selection_img.src = water.image;
+    selectionImg.src = water.image;
     buyButton.style.display = "block";
     buyName.innerHTML = water.name;
   }
   if (e.target.textContent == "Nuka-Cola") {
     selection.innerHTML = nuka.printDescription();
-    selection_img.src = nuka.image;
+    selectionImg.src = nuka.image;
     buyButton.style.display = "block";
     buyName.innerHTML = nuka.name;
   }
   if (e.target.textContent == "Kombucha") {
     selection.innerHTML = kombucha.printDescription();
-    selection_img.src = kombucha.image;
+    selectionImg.src = kombucha.image;
     buyButton.style.display = "block";
     buyName.innerHTML = kombucha.name;
   }
   if (e.target.textContent == "Tab") {
     selection.innerHTML = tab.printDescription();
-    selection_img.src = tab.image;
+    selectionImg.src = tab.image;
     buyButton.style.display = "block";
     buyName.innerHTML = tab.name;
   }

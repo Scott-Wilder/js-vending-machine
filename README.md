@@ -4,4 +4,4 @@ Vanilla JS vending machine
 
 ### Screenshot
 
-![](/images/version-3.png)
+![](/images/version-4.png)

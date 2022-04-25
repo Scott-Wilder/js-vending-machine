@@ -103,6 +103,7 @@ body {
   touch-action: manipulation;
   margin: 1rem;
   margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 #buyButton:hover {
@@ -225,7 +226,9 @@ h2 {
 }
 .product-details {
   padding-top: 1rem;
-  margin-left: 7rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .selectionButtons {
   display: flex;
@@ -247,10 +250,15 @@ h2 {
 #selection {
   font-size: 14px;
   font-weight: 600;
-  margin-left: 5rem;
-  padding: 0.5rem;
+}
+#selectionImg {
+  max-width: 250px;
+  max-height: 250px;
+  margin-left: 6.8rem;
 }
 .btn {
+  font-size: 14px;
+  font-weight: 600;
   width: 5rem;
   height: 5rem;
   cursor: pointer;
