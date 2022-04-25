@@ -11,7 +11,7 @@
         <div class="machine-top">
       <h1>WildMan Vending Machine</h1>
     </div>
-        <h3>Balance: $<span id="balanceNumber">0</span></h3>
+        <h3 id="balance">Balance: $<span id="balanceNumber">0</span></h3>
         <p id="coinandbill">Coin and Bill Count: </br><span id="coinandBillDisplay">Make a coin or bill selection...</span></p>
         <!--coin images 50*50px, bill images 100*50px -->
         <div class="machine-middle-title">
@@ -172,10 +172,12 @@
         <button class="btn" id="tab">Tab</button>
       </div>
     </div>
-        <p id="selection">Make a drink selection...</p>
+    <div class="product-details">
         <!--Drink images 250*250px -->
         <img id="selection_img" src="">
+        <p id="selection">Make a drink selection...</p>
         <button id="buyButton">Buy <span id="buyName"></span></button>
+      </div>
       </div>
       </div>
     </div>
