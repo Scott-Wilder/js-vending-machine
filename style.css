@@ -224,11 +224,25 @@ h3 {
 h2 {
   text-align: center;
 }
+#listTitle {
+  width: max-content;
+}
 .product-details {
   padding-top: 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+.purchaseListBody {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 10rem;
+  max-height: 10rem;
+  bottom: 0;
+  padding-right: 70rem;
 }
 .selectionButtons {
   display: flex;
@@ -255,6 +269,9 @@ h2 {
   max-width: 250px;
   max-height: 250px;
   margin-left: 6.8rem;
+}
+ul {
+  width: max-content;
 }
 .btn {
   font-size: 14px;
