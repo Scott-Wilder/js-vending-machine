@@ -7,12 +7,13 @@ const balanceNumber = document.getElementById("balanceNumber");
 const upVote = document.getElementsByClassName("up-arrow");
 const downVote = document.getElementsByClassName("down-arrow");
 const coinsandBillDisplay = document.getElementById("coinandBillDisplay");
+var purchaseList = document.getElementById("purchaseList");
 // loop to create event listeners on green up arrows that will call function addBalance.
-for (var i = 0; i < upVote.length; i++) {
+for (let i = 0; i < upVote.length; i++) {
   upVote[i].addEventListener("click", addBalance, false);
 }
 // loop to create event listeners on red down arrows that will call function minusBalance.
-for (var i = 0; i < upVote.length; i++) {
+for (let i = 0; i < upVote.length; i++) {
   downVote[i].addEventListener("click", minusBalance, false);
 }
 // Start balanace of $0.
@@ -217,10 +218,10 @@ function updateBalance(value) {
   balance + Math.round((value + Number.EPSILON) * 100) / 100;
   return balance.toFixed(2);
 }
-// Hide buy button until selection has been made.
+// Hide buy button until drink selection has been made.
 buyButton.style.display = "none";
 // loop to create event listeners on drink selection buttons that will call select function.
-for (var i = 0; i < btns.length; i++) {
+for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", select, false);
 }
 // event listener on buy button that will call buy function.
@@ -244,12 +245,12 @@ class Drink {
   }
 }
 // Create drink objects name, price, calorie, image src.
-var coke = new Drink("Coke", 2.5, 250, "images/coke.png");
-var pepsi = new Drink("Pepsi", 2.5, 275, "images/pepsi.png");
-var water = new Drink("Water", 2, 0, "images/water.png");
-var nuka = new Drink("Nuka-Cola", 4.75, 500, "images/nuka.png");
-var kombucha = new Drink("Kombucha", 3.5, 420, "images/kombucha.png");
-var tab = new Drink("Tab", 1, 380, "images/tab.png");
+const coke = new Drink("Coke", 2.5, 250, "images/coke.png");
+const pepsi = new Drink("Pepsi", 2.5, 275, "images/pepsi.png");
+const water = new Drink("Water", 2, 0, "images/water.png");
+const nuka = new Drink("Nuka-Cola", 4.75, 500, "images/nuka.png");
+const kombucha = new Drink("Kombucha", 3.5, 420, "images/kombucha.png");
+const tab = new Drink("Tab", 1, 380, "images/tab.png");
 // Determines which button was pressed and displays corresponding drink object with buy button.
 function select(e) {
   if (e.target.textContent == "Coke") {
@@ -289,12 +290,13 @@ function select(e) {
     buyName.innerHTML = tab.name;
   }
 }
-// Determines which buy button you pressed and subtracts appropiate price from balance.
+// Determines which buy button you pressed and subtracts appropriate price from balance.
 function buy(e) {
   if (e.target.textContent == "Buy Coke" || e.target.textContent == "Coke") {
     if (balance - coke.price >= 0) {
       balance = balance - coke.price;
       balanceNumber.innerHTML = updateBalance(balance);
+      addToList(coke.name);
     } else {
       alert("Insufficient funds");
     }
@@ -303,6 +305,7 @@ function buy(e) {
     if (balance - pepsi.price >= 0) {
       balance = balance - pepsi.price;
       balanceNumber.innerHTML = balance;
+      addToList(pepsi.name);
     } else {
       alert("Insufficient funds");
     }
@@ -311,6 +314,7 @@ function buy(e) {
     if (balance - water.price >= 0) {
       balance = balance - water.price;
       balanceNumber.innerHTML = updateBalance(balance);
+      addToList(water.name);
     } else {
       alert("Insufficient funds");
     }
@@ -322,6 +326,7 @@ function buy(e) {
     if (balance - nuka.price >= 0) {
       balance = balance - nuka.price;
       balanceNumber.innerHTML = updateBalance(balance);
+      addToList(nuka.name);
     } else {
       alert("Insufficient funds");
     }
@@ -333,6 +338,7 @@ function buy(e) {
     if (balance - kombucha.price >= 0) {
       balance = balance - kombucha.price;
       balanceNumber.innerHTML = updateBalance(balance);
+      addToList(kombucha.name);
     } else {
       alert("Insufficient funds");
     }
@@ -341,8 +347,16 @@ function buy(e) {
     if (balance - tab.price >= 0) {
       balance = balance - tab.price;
       balanceNumber.innerHTML = updateBalance(balance);
+      addToList(tab.name);
     } else {
       alert("Insufficient funds");
     }
   }
+}
+// Adds purchase to list on left hand side.
+function addToList(purchase) {
+  let li = document.createElement("li");
+  let t = document.createTextNode(purchase + " 1x");
+  li.appendChild(t);
+  purchaseList.appendChild(li);
 }
