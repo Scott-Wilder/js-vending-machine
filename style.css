@@ -75,6 +75,8 @@ select {
   }
 }
 /*RESET CSS End*/
+
+/*Desktop View*/
 body {
   font-family: monospace;
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
